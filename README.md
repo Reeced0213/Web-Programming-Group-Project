@@ -15,8 +15,8 @@ The webpage is being developed using:
 The goal of this project is to create a functional and interactive
 webpage while applying concepts learned throughout the course.
 
-# My Contributions
-- Assisted with group leadership and project planning.
+# Duane Reece's Contributions
+- Assisted with project planning.
 - Developed the "How to Play" page.
 - Linked the game to the main webpage.
 - Added and linked image assets throughout the website.
