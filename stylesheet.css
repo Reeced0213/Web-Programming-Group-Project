@@ -1,12 +1,18 @@
-.member-box  {
-	border: 1px solid gray; /* A thing gray line around each box */
-	margin-bottom: 15px; /* Space below each box */
-	padding: 10px; /* Space inside each box */
+.contact-form-container {
+	text-align: center;
 }
 
+form {
+  max-width: 500px;
+  margin: 150px auto;
+}
 
-body {
-	background: #000; /*Black background */
-	color: #FCF55F; /*Yellow text */
-]
+fieldset {
+  padding: 30px;
+}
 
+input,
+textarea,
+button {
+  width: 100%;
+}
