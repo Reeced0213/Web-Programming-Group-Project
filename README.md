@@ -23,6 +23,12 @@ webpage while applying concepts learned throughout the course.
 - Tested webpage links and image paths to ensure content loaded correctly.
 - Collaborated with team members to troubleshoot and improve the website.
 
+# Jayla Cockerham's Contributions
+- Assisted with project planning.
+- Created the "Contact" Page (validated contact form, responsive images with defined display/max-width  )
+- Styled contact page with fonts and colors
+- Collaborated with team members to troubleshoot and improve the website.
+
 # Development Tools
 
 - Nextpad++
