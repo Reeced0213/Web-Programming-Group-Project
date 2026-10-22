@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html lang= "en">
-  <head>
-   <meta charset="UTF-8">
-   <title>PacMan</title>
-   <h1>How To Play PacMan</h1>
-  </head>
-  
-  <header>
-  </header>
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How To Play Pacman</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body class="how_to_play-page">
+
   <nav>
-  <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="history.html">History</a></li>
-  <li><a href="how_to_play">How To Play</a></li>
-  <li><a href="impact.html">Impact</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="how_to_play.html">How to Play</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
-  
-  <body>
-      <img src="pacman1_orig.png" alt="Pacman">
-      <h2>How To:</h2>
-      <p><strong>Move Pacman</strong> Use your arrow keys to move Pacman across the game map!</p>
-      <p>How to move:</p>
-      <ol>
-            <ol>
-                  <li style="I"><em>Up Arrow Key</em></li>
-                  <li style="I"><em>Down Arrow Key</em></li>
-                  <li style="I"><em>Left Arrow Key</em></li>
-                  <li style="I"><em>Right Arrow Key</em></li>
-            </ol>
-      <p><strong>Eat the Pellettes</strong> Move Pac-Man around the maze and eat the pellets to earn points.<p>
-      <p><strong>Avoid the ghosts</strong> Avoid the ghosts! If a ghost catches Pac-Man, you lose a life.<p>
-      <p><strong>Eat the Super Pellettes</strong> to temporarily turn the ghosts blue. You can then eat the ghosts for extra points.</p>
-      <p><strong>Goal: </strong> Eat all of the pellets in the maze while avoiding the ghosts and try to get the highest score possible!</p>
-      </ol>
-      
-      <p>Play The Game: <a href="https://pacman.live/#google_vignette">Click Here!</a>
-      
-  
-  <footer>&copy; 2026 PacMan. All right reserved</footer>
-  </body>
-  </html>
+
+  <main>
+    <div id="how_to_play">
+      <h1>How To Play Pacman</h1>
+      <hr>
+
+      <img src="images/pacman image.png" alt="Pacman">
+
+      <div id="grid-container">
+        <div>
+          <p><strong>Move Pacman</strong> Use your arrow keys to move Pacman across the game map!</p>
+          <ol>
+            <li><em>Up Arrow Key</em></li>
+            <li><em>Down Arrow Key</em></li>
+            <li><em>Left Arrow Key</em></li>
+            <li><em>Right Arrow Key</em></li>
+          </ol>
+        </div>
+        <div><p><strong>Eat the Pellets</strong> Move Pac-Man around the maze and eat the pellets to earn points.</p></div>
+        <div><p><strong>Avoid the ghosts</strong> If a ghost catches Pac-Man, you lose a life.</p></div>
+        <div><p><strong>Eat the Super Pellets</strong> to temporarily turn the ghosts blue. You can then eat the ghosts for extra points.</p></div>
+        <div><p><strong>Goal: </strong> Eat all of the pellets in the maze while avoiding the ghosts and try to get the highest score possible!</p></div>
+        <div><p>Play The Game: <a href="https://pacman.live/#google_vignette">Click Here!</a></p></div>
+      </div>
+
+      <p style="text-align: center;">Watch the Gameplay Here:</p>
+      <iframe allow="autoplay" width="460" height="250"
+              src="https://www.youtube.com/embed/dK_9ECveyK0"
+              title="Youtube Video Tutorial"></iframe>
+
+      <h2>Pac-Man Characters &amp; Fruit Table</h2>
+      <table>
+        <tr><th>Name</th><th>Type</th><th>Color</th><th>Role / Points</th><th>Short Description</th></tr>
+        <tr><td>Pac-Man</td><td>Character</td><td>Yellow</td><td>Main Player</td><td>The hungry hero who navigates the maze eating dots.</td></tr>
+        <tr><td>Blinky</td><td>Ghost</td><td>Red</td><td>Chases Pac-Man</td><td>The most aggressive ghost; speeds up as the game progresses.</td></tr>
+        <tr><td>Pinky</td><td>Ghost</td><td>Pink</td><td>Ambusher</td><td>Tries to position ahead of Pac-Man to cut him off.</td></tr>
+        <tr><td>Inky</td><td>Ghost</td><td>Cyan</td><td>Unpredictable</td><td>Moves based on both Pac-Man and Blinky’s positions.</td></tr>
+        <tr><td>Cherry</td><td>Fruit</td><td>Red</td><td>100 Points</td><td>The first fruit bonus that appears in the maze.</td></tr>
+        <tr><td>Strawberry</td><td>Fruit</td><td>Red</td><td>300 Points</td><td>A higher-value fruit that appears in later rounds.</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Pacman. All rights reserved.</footer>
+
+</body>
+</html>
