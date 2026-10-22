@@ -1,18 +1,215 @@
-.contact-form-container {
-	text-align: center;
+/* File name: stylesheet1.css
+   Date: 9/22/2026
+   Names: Jayla Cockerham, Dayna Thompson, Duane Reece, Marquelle Brown, Jaden Copeland
+*/
+
+html, body, header, nav, main, section, article, aside, footer,
+div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img, table, th, td,
+form, label, input, textarea, button, iframe, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-form {
-  max-width: 500px;
-  margin: 150px auto;
+:root {
+  --black: #000000;
+  --yellow: #FFE600;   /* Pac-Man */
+  --blue: #2121DE;     /* maze walls */
+  --red: #FF0000;      /* Blinky */
+  --pink: #FFB8FF;     /* Pinky */
+  --cyan: #00FFFF;     /* Inky */
+  --orange: #FFB851;   /* Clyde */
+  --white: #FFFFFF;
 }
 
-fieldset {
-  padding: 30px;
+html { scroll-behavior: smooth; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Courier New", Courier, monospace;
 }
 
-input,
-textarea,
-button {
+main { width: 100%; padding: 0 15px 30px; }
+
+img { max-width: 100%; height: auto; display: block; }
+iframe { max-width: 100%; }
+
+h1 {
+  text-align: center;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0 10px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--cyan);
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+
+h3 { color: var(--pink); margin: 20px 0 10px; }
+
+hr {
+  border-top: 4px dotted var(--yellow);
+  margin: 10px auto 20px;
+  max-width: 600px;
+}
+
+a { color: var(--cyan); }
+a:hover { color: var(--yellow); }
+
+nav {
   width: 100%;
+  padding: 12px;
+  background-color: var(--black);
+  border-bottom: 5px solid var(--blue);
 }
+
+nav ul { list-style: none; text-align: center; }
+nav ul li { display: inline-block; margin: 0 10px; }
+nav a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+nav a:hover { color: var(--red); }
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  color: var(--yellow);
+  border-top: 5px solid var(--blue);
+}
+
+table { border-collapse: collapse; margin: 15px auto; max-width: 100%; }
+th, td { border: 2px solid var(--blue); padding: 10px; }
+th { background-color: var(--yellow); color: var(--black); }
+
+.member { margin-bottom: 50px; }
+
+.member img {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 5px solid var(--yellow);
+  object-fit: cover;
+  margin: 15px auto;
+}
+
+.member p {
+  max-width: 950px;
+  margin: 10px auto;
+  line-height: 1.5;
+}
+
+.history-page #history { max-width: 950px; margin: 0 auto; }
+.history-page p { line-height: 1.5; }
+
+.how_to_play-page img { margin: 15px auto; }
+.how_to_play-page iframe {
+  display: block;
+  margin: 15px auto;
+  border: 4px solid var(--blue);
+}
+
+#grid-container {
+  width: 600px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+#grid-container > div {
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  border: 3px solid var(--blue);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#grid-container strong { color: var(--yellow); }
+#grid-container p { margin: 0 0 10px; }
+#grid-container ol { display: inline-block; text-align: left; padding-left: 20px; }
+#grid-container a { color: var(--yellow); }
+
+.contact-page .form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--black);
+  border: 4px solid var(--blue);
+  border-radius: 10px;
+}
+
+/* Styles for contact page form elements.
+This includes labels, inputs, and textareas. 
+*/
+.contact-page label { color: var(--yellow); font-weight: bold; }
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 3px solid var(--blue);
+  background-color: var(--black);
+  color: var(--white);
+  font-family: inherit;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus { outline: 3px solid var(--yellow); }
+
+.contact-page button {
+  padding: 10px 25px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: bold;
+  font-family: inherit;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.contact-page button:hover { background-color: var(--red); color: var(--white); }
+
+
+.impact-page #impact1 { max-width: 950px; margin: 0 auto; }
+.impact-page p { text-indent: 60px; line-height: 1.5; }
+.impact-page #impact ul { list-style: none; padding: 0; }
+.impact-page #impact li {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  line-height: 1.5;
+  border-left: 8px solid var(--red);
+}
+
+.impact-page #impact li:nth-child(2) { border-left-color: var(--pink); }
+.impact-page #impact li:nth-child(3) { border-left-color: var(--cyan); }
+
+
+@media (max-width: 600px) {
+  #grid-container { grid-template-columns: 1fr; }
+  
+.impact-page p { text-indent: 30px; }
+}
+
+.contact-page .form-group { margin-bottom: 15px; }
+
