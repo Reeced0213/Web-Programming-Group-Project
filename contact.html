@@ -1,9 +1,10 @@
-<html lang="en>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us</title>
 <link rel="stylesheet" href="css/stylesheet.css">
+
 </head>
 
 <body class="contact-page">
@@ -21,12 +22,11 @@
 <main>
 <div id="contact">
 <h1>Contact Us</h1>
-</main>
 
 <div class="form-container">
   <p style="text-align: center;">Any questions or remarks? Leave us a message and our team will get back to you as soon as possible!</p>
 <hr>
-  <form action="https://typicode.com" method="POST">
+  <form id="contactForm" action="https://typicode.com" method="POST" novalidate>
     
 	<div class="form-group">
 		<label>How did you hear about us?</label><br>
@@ -61,15 +61,15 @@
     <div class="form-group">
       <label for="message">Your Message</label>
 	  <br>
-      <textarea rows="5" name="message" id="message" placeholder="How can we help you?" required></textarea>
-</textarea><br><br>
+      <textarea rows="5" name="message" id="message" placeholder="How can we help you?"></textarea><br><br>
     </div>
     
-    <button type="submit">Send Message</button>
-   </body>
-  </form>
-</div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
 
-<footer>&copy; 2026 Pacman. All rights reserved.</footer>
+	<footer>&copy; 2026 Pacman. All rights reserved.</footer>
+	<script src="scripts/validate.js" defer></script>
 </body>
 </html>
