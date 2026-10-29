@@ -1,75 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-<link rel="stylesheet" href="css/stylesheet.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get in Touch With Us</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-
 <body class="contact-page">
-
   <nav>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="history.html">History</a></li>
-	  <li><a href="how_to_play.html">How to Play</a></li>
-	  <li><a href="impact.html">Impact</a></li>
-	  <li><a href="contact.html">Contact</a></li>
-	</ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="how_to_play.html">How to Play</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
- 
-<main>
-<div id="contact">
-<h1>Contact Us</h1>
 
-<div class="form-container">
-  <p style="text-align: center;">Any questions or remarks? Leave us a message and our team will get back to you as soon as possible!</p>
-<hr>
-  <form id="contactForm" action="https://typicode.com" method="POST" novalidate>
-    
-	<div class="form-group">
-		<label>How did you hear about us?</label><br>
-		<input type="radio" id="hear-online" name="how-heard" value="online">
-		
-		<label for="hear-online">Online Search</label><br>
+  <main>
+    <section class="contact-top" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Get in touch</p>
+          <h1 id="contact-heading">Get in Touch With Us</h1>
+          <p>We’d love to hear from you.</p>
+        </div>
+        <div class="form-container contact-card">
+          <form id="contactForm" action="https://typicode.com" method="POST" novalidate>
+            <div class="form-fields">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+              </div>
+              <div class="form-group full-width">
+                <label for="message">Your Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="How can we help you?"></textarea>
+              </div>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-		<input type="radio" id="hear-social" name="how-heard" value="social-media">
-		<label for="hear-social">Social Media</label><br>
+    <section class="location-section" aria-labelledby="location-heading">
+      <div class="contact-section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Our location</p>
+          <h2 id="location-heading">Visit Us</h2>
+          <p>Find us at Florida A&amp;M University in Tallahassee, Florida.</p>
+        </div>
+        <figure class="map-photo">
+          <img src="images/location%20on%20map.png" alt="Map showing Florida A&amp;M University in Tallahassee" width="640" height="320">
+          <figcaption>
+            <a class="address-link" href="https://www.google.com/search?kgmid=%2Fg%2F11jz5gbc0t" target="_blank" rel="noopener noreferrer">1601 S. Martin Luther King Jr. Blvd., Tallahassee, FL 32307</a>
+            <a class="map-link" href="https://maps.google.com/?q=1601+S.+Martin+Luther+King+Jr.+Blvd.+Tallahassee+FL+32307" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
-		<input type="radio" id="hear-friend" name="how-heard" value="friend">
-		<label for="hear-friend">From a Friend</label><br>
-
-		<input type="radio" id="hear-other" name="how-heard" value="other">
-		<label for="hear-other">Other</label><br><br>
-</div>
-    <div class="form-group">
-      <label for="firstname">First Name</label><br>
-      <input type="text" id="firstname" name="firstname" placeholder="ex:'John'" required>
-	  <br><br>
-    </div>
-	<div class="form-group">
-      <label for="lastname">Last Name</label><br>
-      <input type="text" id="lastname" name="lastname" placeholder="ex:'Smith'" required>
-	  <br><br>
-    </div>
-    <div class="form-group">
-      <label for="email">Email Address</label><br>
-      <input type="email" id="email" name="email" placeholder="you@example.com" required>
-	<br><br>
-    </div> 
-    <div class="form-group">
-      <label for="message">Your Message</label>
-	  <br>
-      <textarea rows="5" name="message" id="message" placeholder="How can we help you?"></textarea><br><br>
-    </div>
-    
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+    <section class="team" aria-labelledby="team-heading">
+      <div class="contact-section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">The people behind the project</p>
+          <h2 id="team-heading">Meet Our Team</h2>
+          <p>Connect with our team members and view their resumes.</p>
+        </div>
+        <div class="team-grid">
+          <article class="person">
+            <img class="person-photo" src="images/jayla.jpg" alt="Jayla Cockerham">
+            <h3>Jayla Cockerham</h3>
+            <p class="role">Team Member</p>
+            <a class="btn-download" href="media/jayla%20cockerham%20Resume.pdf" download>Download Resume</a>
+            <a class="linkedin-link">https://www.linkedin.com/in/jayla-cockerham/
+          <article class="person">
+            <img class="person-photo" src="images/duane.png" alt="Duane Reece">
+            <h3>Duane Reece</h3>
+            <p class="role">Team Member</p>
+            <a class="btn-download" href="media/duane_Resume.pdf" download>Download Resume</a>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/duane-reece-44109a275" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          </article>
+          <article class="person">
+            <img class="person-photo" src="images/dayna%20(1).png" alt="Dayna Thompson">
+            <h3>Dayna Thompson</h3>
+            <p class="role">Team Member</p>
+            <a class="btn-download" href="media/dayna_resume.pdf" download>Download Resume</a>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/dayna-thompson-7a5162437/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          </article>
+          <article class="person">
+            <img class="person-photo" src="images/jaden.jpeg" alt="Jaden Copeland">
+            <h3>Jaden Copeland</h3>
+            <p class="role">Team Member</p>
+            <a class="btn-download" href="media/jaden%20resume.pdf" download>Download Resume</a>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/jaden-copeland-1305633b7" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          </article>
+          <article class="person">
+            <img class="person-photo" src="images/marquell.jpeg" alt="Marquell Brown">
+            <h3>Marquell Brown</h3>
+            <p class="role">Team Member</p>
+            <a class="btn-download" href="media/marquell%20resume%20.pdf" download>Download Resume</a>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/marquell-brown-9224a4440" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-	<footer>&copy; 2026 Pacman. All rights reserved.</footer>
-	<script src="scripts/validate.js" defer></script>
+  <footer>&copy; 2026 Pacman. All rights reserved.</footer>
+  <script src="scripts/validate.js" defer></script>
 </body>
 </html>
