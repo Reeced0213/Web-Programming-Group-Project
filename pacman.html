@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="pacman.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+        <h1> PAC-MAN </h1>
+
+        <div class="score-board">
+            Score: <span id="score">0</span>
+        </div>
+
+        <canvas id="gameCanvas" width="480" height="480"></canvas>
+
+        <p>Use your arrow keys to move Pac-Man!</p>
+
+        <button id="restartButton">Restart Game</button>
+    </div>
+
+    <script src="pacman.js"></script>
+
+<section id="pacman-game">
+
+    <h2>Play Pac-Man!</h2>
+
+    <iframe
+        src="game/pacman.html"
+        width="520"
+        height="650"
+        title="Pac-Man Game">
+    </iframe>
+
+</section>
+
+</body>
+</html>
