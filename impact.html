@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet">
   <title>Pacman's Impact</title>
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
@@ -20,20 +23,58 @@
   </nav>
 
   <main>
-    <div id="impact">
-      <h1>Pac-Man's Impact</h1>
+    <section id="impact" aria-labelledby="impact-heading">
+      <h1 id="impact-heading">Pac-Man’s Impact</h1>
       <hr>
 
-      <h2>Longevity</h2>
-      <p>Since Pac-Man's release the game has become a global phenomenon. In the 1980s it sold over 350,000 copies and became the most popular game in the world dethroning games like Asteroids and Space Invaders. The game traversed through all gaming consoles even making its way to new age technology with laptops and mobile devices. Pac-Man merch was soon becoming a big success with Pac-man themed toys, clothes, chalkboards, pillows, erasers, bubble pipes, costumes, shower curtains, pens, jewelry, lunchboxes, bumper stickers, and books. There are even songs and tv shows inspired from the game. Jerry Buckner and Gary Garcia 1982 single <em>Pac-Man Fever</em> and the 2013 television show <em>Pac-Man and the Ghostly Adventures</em>. Pac-Man is also featured in many films such as <em>Pixars</em> 2015 and <em>Wreck-It-Ralph</em> 2012. Pac-Man impact and influence spans over decades and trends. Even different versions of the game began to release such as Pac-Man Plus and Baby Pac-Man but the most notable creation being Ms. Pac-Man.</p>
+      <section class="content-box impact-longevity" aria-labelledby="longevity-heading">
+        <h2 id="longevity-heading">Longevity</h2>
+        <p>Since its release, Pac-Man has become a global phenomenon. In the 1980s, it sold over 350,000 copies and became one of the world’s most popular games. It later appeared on consoles, computers, and mobile devices. Pac-Man merchandise, music, television, and film helped the character remain familiar across generations.</p>
+        <div class="impact-facts">
+          <article>
+            <h3>Arcade Success</h3>
+            <p>Pac-Man rose above other popular arcade titles, including Asteroids and Space Invaders.</p>
+          </article>
+          <article>
+            <h3>Pop Culture</h3>
+            <p>The character inspired merchandise, the 1982 song <em>Pac-Man Fever</em>, television shows, and film appearances.</p>
+          </article>
+          <article>
+            <h3>New Versions</h3>
+            <p>Spin-offs such as Ms. Pac-Man, Pac-Man Plus, and Baby Pac-Man extended the original maze-game idea in different ways.</p>
+          </article>
+        </div>
+      </section>
 
-      <h2>Sequels</h2>
-      <ul>
-        <li><strong><em>Ms. Pac-Man</em></strong>: Ms. Pac-Man is similar to the original game but has key differences. Ms. Pac-Man has four different types of mazes. A pink maze for levels one and two, a light blue maze for levels three through five, a brown maze for levels six through nine, and a dark blue maze for levels ten through fourteen. Once you pass these levels, the maze layout changes every four levels allowing for unlimited gameplay. Some other cool details is that the food bounces around instead of staying in the middle like in the original and there are two warped tunnels.</li>
-        <li><strong><em>Pac-Man Plus</em></strong>: Pac-Man Plus is a more advanced version of Pac-Man, as the game includes small gameplay differences. An example of this is that when Pac-Man eats the energy typically all ghosts become scared, but in this version one ghost is unaffected. There are also small changes in the visuals as the maze color changed from blue to teal and the fruit changed into more updated objects like the strawberry becoming a cocktail and the cherry becomes a Coca Can.</li>
-        <li><strong><em>Baby Pac-Man</em></strong>: Baby Pac-Man is really not like the original as this version is played like a pinball machine and can be played by two players while the original game is single player. The premise of the game is still similar Pac-Man is eating fruit but eating the normal fruit will cause bonus fruit to appear and eating this bonus fruit will light up indicators in the maze, the indicators spell fruit, and pinball mode will be activated. A round is completed when all the dots are eaten but the game ends when all of Baby Pac-Man's lives are lost. In this game the ghosts are more aggressive and mazes can be completed by collecting 10,000 points.</li>
-      </ul>
-    </div>
+      <section class="sequels-section" aria-labelledby="sequels-heading">
+        <h2 id="sequels-heading">Sequels and Spin-offs</h2>
+        <div class="sequel-grid">
+          <article class="content-box">
+            <h3>Ms. Pac-Man</h3>
+            <ul>
+              <li>Introduced four maze layouts that changed as players advanced.</li>
+              <li>Added moving bonus fruit and two warp tunnels.</li>
+              <li>Updated the ghost behavior from the original game.</li>
+            </ul>
+          </article>
+          <article class="content-box">
+            <h3>Pac-Man Plus</h3>
+            <ul>
+              <li>Changed some gameplay details, including a ghost that could remain unaffected by the power pellet.</li>
+              <li>Updated visuals, changing the maze color from blue to teal and altering fruit designs.</li>
+            </ul>
+          </article>
+          <article class="content-box">
+            <h3>Baby Pac-Man</h3>
+            <ul>
+              <li>Combined maze gameplay with a pinball machine.</li>
+              <li>Bonus fruit and pinball targets added another way to earn points.</li>
+              <li>Players completed rounds by clearing the dots while avoiding increasingly aggressive ghosts.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </section>
   </main>
 
   <footer>&copy; 2026 Pacman. All rights reserved.</footer>
