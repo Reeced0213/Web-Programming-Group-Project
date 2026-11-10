@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet">
   <title>How To Play Pacman</title>
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
@@ -24,8 +27,6 @@
       <h1>How To Play Pacman</h1>
       <hr>
 
-      <img src="images/pacman image.png" alt="Pacman" id= "pacman image">
-
       <div id="grid-container">
         <div>
           <p><strong>Move Pacman</strong> Use your arrow keys to move Pacman across the game map!</p>
@@ -40,28 +41,52 @@
         <div><p><strong>Avoid the ghosts</strong> If a ghost catches Pac-Man, you lose a life.</p></div>
         <div><p><strong>Eat the Super Pellets</strong> to temporarily turn the ghosts blue. You can then eat the ghosts for extra points.</p></div>
         <div><p><strong>Goal: </strong> Eat all of the pellets in the maze while avoiding the ghosts and try to get the highest score possible!</p></div>
-        <div><p>Play The Game: <a href="https://pacman.live/#google_vignette">Click Here!</a></p></div>
+        <div><p><strong>Play Pac-Man</strong> Jump to the arcade game below and try it yourself.</p><p><a href="#pacman-game">Go to the game</a></p></div>
       </div>
 
-      <p style="text-align: center;">Watch the Gameplay Here:</p>
-      <iframe allow="autoplay" width="460" height="250"
-              src="https://www.youtube.com/embed/dK_9ECveyK0"></iframe>
+      <section class="pacman-game" id="pacman-game" aria-labelledby="game-heading">
+        <div class="game-container">
+          <h2 id="game-heading">Play Pac-Man!</h2>
+          <p class="game-instructions">Use the arrow keys or on-screen buttons to move Pac-Man. Eat every dot and avoid the ghosts.</p>
+          <p class="score-board" aria-live="polite">Score: <span id="score">0</span></p>
+          <canvas id="gameCanvas" width="480" height="480" tabindex="0" aria-label="Pac-Man maze game. Focus this game and use the arrow keys to play.">
+            Your browser does not support the game canvas. Use the arrow controls or reload in a modern browser.
+          </canvas>
+          <div class="direction-pad" role="group" aria-label="Touch movement controls">
+            <button type="button" data-direction="up" aria-label="Move up">▲</button>
+            <button type="button" data-direction="left" aria-label="Move left">◀</button>
+            <button type="button" data-direction="down" aria-label="Move down">▼</button>
+            <button type="button" data-direction="right" aria-label="Move right">▶</button>
+          </div>
+          <button class="restart-button" id="restartButton" type="button">Restart Game</button>
+        </div>
+      </section>
+
+      <section class="video-link-card" aria-labelledby="gameplay-video-heading">
+        <h2 id="gameplay-video-heading">Watch Gameplay</h2>
+        <video class="gameplay-video" controls poster="images/pacman-hero.avif" preload="metadata" playsinline>
+          <source src="media/pacman-gameplay.mp4" type="video/mp4">
+          <source src="media/pacman-gameplay.mov" type="video/quicktime">
+          <p>Your browser does not support HTML video. <a href="media/pacman-gameplay.mp4">Download the Pac-Man gameplay video</a>.</p>
+        </video>
+      </section>
 			  
 
       <h2>Pac-Man Characters &amp; Fruit Table</h2>
       <table>
         <tr><th>Name</th><th>Type</th><th>Color</th><th>Role / Points</th><th>Short Description</th></tr>
         <tr><td>Pac-Man</td><td>Character</td><td>Yellow</td><td>Main Player</td><td>The hungry hero who navigates the maze eating dots.</td></tr>
-        <tr><td>Blinky</td><td>Ghost</td><td>Red</td><td>Chases Pac-Man</td><td>The most aggressive ghost; speeds up as the game progresses.</td></tr>
-        <tr><td>Pinky</td><td>Ghost</td><td>Pink</td><td>Ambusher</td><td>Tries to position ahead of Pac-Man to cut him off.</td></tr>
-        <tr><td>Inky</td><td>Ghost</td><td>Cyan</td><td>Unpredictable</td><td>Moves based on both Pac-Man and Blinky’s positions.</td></tr>
-        <tr><td>Cherry</td><td>Fruit</td><td>Red</td><td>100 Points</td><td>The first fruit bonus that appears in the maze.</td></tr>
-        <tr><td>Strawberry</td><td>Fruit</td><td>Red</td><td>300 Points</td><td>A higher-value fruit that appears in later rounds.</td></tr>
+        <tr><td>Blinky</td><td rowspan="3">Ghost</td><td>Red</td><td>Chases Pac-Man</td><td>The most aggressive ghost; speeds up as the game progresses.</td></tr>
+        <tr><td>Pinky</td><td>Pink</td><td>Ambusher</td><td>Tries to position ahead of Pac-Man to cut him off.</td></tr>
+        <tr><td>Inky</td><td>Cyan</td><td>Unpredictable</td><td>Moves based on both Pac-Man and Blinky’s positions.</td></tr>
+        <tr><td>Cherry</td><td rowspan="2">Fruit</td><td>Red</td><td>100 Points</td><td>The first fruit bonus that appears in the maze.</td></tr>
+        <tr><td>Strawberry</td><td>Red</td><td>300 Points</td><td>A higher-value fruit that appears in later rounds.</td></tr>
       </table>
     </div>
   </main>
 
   <footer>&copy; 2026 Pacman. All rights reserved.</footer>
 
+  <script src="scripts/script.js" defer></script>
 </body>
 </html>
